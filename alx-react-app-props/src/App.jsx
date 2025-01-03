@@ -1,15 +1,12 @@
-// src/App.jsx
 import React from 'react';
-import UserContext from './UserContext'; // Import UserContext
-import ProfilePage from './components/ProfilePage'; // Import ProfilePage component
+import { UserProvider } from './UserContext'; // Import the UserProvider
+import ProfilePage from './components/ProfilePage'; // Assuming ProfilePage is your main component
 
 function App() {
-  const userData = { name: "Jane Doe", email: "jane.doe@example.com" };
-
   return (
-    <UserContext.Provider value={userData}>
-      <ProfilePage /> {/* Wrap ProfilePage with UserContext.Provider */}
-    </UserContext.Provider>
+    <UserProvider>
+      <ProfilePage />
+    </UserProvider>
   );
 }
 

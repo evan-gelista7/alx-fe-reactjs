@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import { UserContext } from '../UserContext'; // Import the UserContext
-import UserInfo from './UserInfo'; // Assuming UserInfo is a child component
+import { UserContext } from '../UserContext';
+import UserInfo from './UserInfo';
 
 function ProfilePage() {
-  const { userData } = useContext(UserContext); // Access userData from context
+  const { userData } = useContext(UserContext);
 
   return (
     <div>

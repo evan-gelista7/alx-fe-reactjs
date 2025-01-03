@@ -1,9 +1,10 @@
+// src/UserContext.js
 import React, { createContext, useState } from 'react';
 
 // Create the UserContext
 export const UserContext = createContext();
 
-// UserProvider component to provide context to children components
+// Create a UserProvider component that holds the state
 export const UserProvider = ({ children }) => {
   const [userData, setUserData] = useState({
     name: "Jane Doe", 

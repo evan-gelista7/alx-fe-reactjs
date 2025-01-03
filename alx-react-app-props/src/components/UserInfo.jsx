@@ -3,7 +3,7 @@ import { UserContext } from '../UserContext'; // Import the UserContext
 
 function UserInfo() {
   const { userData } = useContext(UserContext); // Access userData from context
-
+  
   return (
     <div>
       <p>Name: {userData.name}</p>
